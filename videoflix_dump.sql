@@ -15,12 +15,6 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
--- -----------------------------------------------------
--- Schema videoflix_db
--- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `videoflix_db` DEFAULT CHARACTER SET utf8 ;
-USE `videoflix_db` ;
-
 --
 -- Table structure for table `genre`
 --
@@ -129,7 +123,7 @@ CREATE TABLE `movie_direction` (
 
 LOCK TABLES `movie_direction` WRITE;
 /*!40000 ALTER TABLE `movie_direction` DISABLE KEYS */;
-INSERT INTO `movie_direction` VALUES (31,1),(32,2),(33,2),(35,5),(36,6),(37,7),(37,8),(38,9),(39,10),(40,11),(41,12),(42,13),(43,14),(44,15),(45,16),(45,23),(46,17),(47,18),(48,19),(48,22),(49,20),(50,21),(51,24);
+INSERT INTO `movie_direction` VALUES (11,12),(31,1),(32,2),(33,2),(35,5),(36,6),(37,7),(37,8),(38,9),(39,10),(40,11),(42,13),(43,14),(44,15),(45,16),(45,23),(46,17),(47,18),(48,19),(48,22),(49,20),(50,21),(51,24);
 /*!40000 ALTER TABLE `movie_direction` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -247,7 +241,7 @@ CREATE TABLE `people` (
 
 LOCK TABLES `people` WRITE;
 /*!40000 ALTER TABLE `people` DISABLE KEYS */;
-INSERT INTO `people` VALUES (1,'ROLE_ACTOR',NULL,'James','Stewart','M','US'),(2,'ROLE_ACTOR',NULL,'Deborah','Kerr','F','US'),(3,'ROLE_ACTOR',NULL,'Peter','OToole','M','US'),(4,'ROLE_ACTOR',NULL,'Robert','De Niro','M','US'),(5,'ROLE_ACTOR',NULL,'F. Murray','Abraham','M','US'),(6,'ROLE_ACTOR',NULL,'Harisson','Ford','M','US'),(7,'ROLE_ACTOR',NULL,'Nicole','Kidman','F','US'),(8,'ROLE_ACTOR',NULL,'Stephen','Baldwin','M','US'),(9,'ROLE_ACTOR',NULL,'Jack','Nicholson','M','US'),(10,'ROLE_ACTOR',NULL,'Mark','Wahlberg','M','US'),(11,'ROLE_ACTOR',NULL,'Woody','Allen','M','US'),(12,'ROLE_ACTOR',NULL,'Claire','Danes','F','US'),(13,'ROLE_ACTOR',NULL,'Tim','Robbins','M','US'),(14,'ROLE_ACTOR',NULL,'Kevin','Spacey','M','US'),(15,'ROLE_ACTOR',NULL,'Kate','Winslet','F','US'),(16,'ROLE_ACTOR',NULL,'Robin','Williams','M','US'),(17,'ROLE_ACTOR',NULL,'Jon','Voight','M','US'),(18,'ROLE_ACTOR',NULL,'Ewan','McGregor','M','US'),(19,'ROLE_ACTOR',NULL,'Christian','Bale','M','US'),(20,'ROLE_ACTOR',NULL,'Maggie','Gyllenhaal','F','US'),(21,'ROLE_ACTOR',NULL,'Dev','Patel','M','US'),(22,'ROLE_ACTOR',NULL,'Sigourney','Weaver','F','US'),(23,'ROLE_ACTOR',NULL,'Gérard','Depardieu','M','FR'),(24,'ROLE_ACTOR',NULL,'Jean Paul','Belmondo','M','FR'),(25,'ROLE_ACTOR',NULL,'Alain','Delon','M','FR'),(26,'ROLE_ACTOR',NULL,'Jean','Dujardin','M','FR'),(27,'ROLE_ACTOR',NULL,'Catherine','Deneuve','F','FR'),(28,'ROLE_ACTOR',NULL,'Marion','Dotillard','F','FR'),(29,'ROLE_ACTOR',NULL,'Omar','Sy','M','FR'),(30,'ROLE_ACTOR',NULL,'Leila','Bekhti','F','FR'),(31,'ROLE_DIRECTOR',NULL,'Alfred','Hitchcock','M','US'),(32,'ROLE_DIRECTOR',NULL,'Jack','Clayton','M','US'),(33,'ROLE_DIRECTOR',NULL,'David','Lean','M','US'),(34,'ROLE_DIRECTOR',NULL,'Michael','Cimino','M','US'),(35,'ROLE_DIRECTOR',NULL,'Milos','Forman','M','US'),(36,'ROLE_DIRECTOR',NULL,'Ridley','Scott','M','US'),(37,'ROLE_DIRECTOR',NULL,'Stanley','Kubrick','M','US'),(38,'ROLE_DIRECTOR',NULL,'Bryan','Singer','M','US'),(39,'ROLE_DIRECTOR',NULL,'Roman','Polanski','M','US'),(40,'ROLE_DIRECTOR',NULL,'Paul','Thomas Anderson','M','US'),(41,'ROLE_DIRECTOR',NULL,'Woody','Allen','M','US'),(42,'ROLE_DIRECTOR',NULL,'Hayao','Miyazaki','M','US'),(43,'ROLE_DIRECTOR',NULL,'Frank','Darabont','M','US'),(44,'ROLE_DIRECTOR',NULL,'Sam','Mendes','M','US'),(45,'ROLE_DIRECTOR',NULL,'James','Cameron','M','US'),(46,'ROLE_DIRECTOR',NULL,'Gus','Van Sant','M','US'),(47,'ROLE_DIRECTOR',NULL,'John','Boorman','M','US'),(48,'ROLE_DIRECTOR',NULL,'Danny','Boyle','M','US'),(49,'ROLE_DIRECTOR',NULL,'Christopher','Nolan','M','US'),(50,'ROLE_DIRECTOR',NULL,'Richard','Kelly','M','US'),(51,'ROLE_DIRECTOR',NULL,'Kevin','Spacey','M','US'),(52,'ROLE_DIRECTOR',NULL,'Andrei','Tarkovsky','M','US'),(53,'ROLE_DIRECTOR',NULL,'Peter','Jackson','M','US');
+INSERT INTO `people` VALUES (1,'ROLE_ACTOR',NULL,'James','Stewart','M','US'),(2,'ROLE_ACTOR',NULL,'Deborah','Kerr','F','US'),(3,'ROLE_ACTOR',NULL,'Peter','OToole','M','US'),(4,'ROLE_ACTOR',NULL,'Robert','De Niro','M','US'),(5,'ROLE_ACTOR',NULL,'F. Murray','Abraham','M','US'),(6,'ROLE_ACTOR',NULL,'Harisson','Ford','M','US'),(7,'ROLE_ACTOR',NULL,'Nicole','Kidman','F','US'),(8,'ROLE_ACTOR',NULL,'Stephen','Baldwin','M','US'),(9,'ROLE_ACTOR',NULL,'Jack','Nicholson','M','US'),(10,'ROLE_ACTOR',NULL,'Mark','Wahlberg','M','US'),(11,'a:2:{i:0;s:13:\"ROLE_DIRECTOR\";i:0;s:10:\"ROLE_ACTOR\";}',NULL,'Woody','Allen','M','US'),(12,'ROLE_ACTOR',NULL,'Claire','Danes','F','US'),(13,'ROLE_ACTOR',NULL,'Tim','Robbins','M','US'),(14,'ROLE_ACTOR',NULL,'Kevin','Spacey','M','US'),(15,'ROLE_ACTOR',NULL,'Kate','Winslet','F','US'),(16,'ROLE_ACTOR',NULL,'Robin','Williams','M','US'),(17,'ROLE_ACTOR',NULL,'Jon','Voight','M','US'),(18,'ROLE_ACTOR',NULL,'Ewan','McGregor','M','US'),(19,'ROLE_ACTOR',NULL,'Christian','Bale','M','US'),(20,'ROLE_ACTOR',NULL,'Maggie','Gyllenhaal','F','US'),(21,'ROLE_ACTOR',NULL,'Dev','Patel','M','US'),(22,'ROLE_ACTOR',NULL,'Sigourney','Weaver','F','US'),(23,'ROLE_ACTOR',NULL,'Gérard','Depardieu','M','FR'),(24,'ROLE_ACTOR',NULL,'Jean Paul','Belmondo','M','FR'),(25,'ROLE_ACTOR',NULL,'Alain','Delon','M','FR'),(26,'ROLE_ACTOR',NULL,'Jean','Dujardin','M','FR'),(27,'ROLE_ACTOR',NULL,'Catherine','Deneuve','F','FR'),(28,'ROLE_ACTOR',NULL,'Marion','Dotillard','F','FR'),(29,'ROLE_ACTOR',NULL,'Omar','Sy','M','FR'),(30,'ROLE_ACTOR',NULL,'Leila','Bekhti','F','FR'),(31,'ROLE_DIRECTOR',NULL,'Alfred','Hitchcock','M','US'),(32,'ROLE_DIRECTOR',NULL,'Jack','Clayton','M','US'),(33,'ROLE_DIRECTOR',NULL,'David','Lean','M','US'),(34,'ROLE_DIRECTOR',NULL,'Michael','Cimino','M','US'),(35,'ROLE_DIRECTOR',NULL,'Milos','Forman','M','US'),(36,'ROLE_DIRECTOR',NULL,'Ridley','Scott','M','US'),(37,'ROLE_DIRECTOR',NULL,'Stanley','Kubrick','M','US'),(38,'ROLE_DIRECTOR',NULL,'Bryan','Singer','M','US'),(39,'ROLE_DIRECTOR',NULL,'Roman','Polanski','M','US'),(40,'ROLE_DIRECTOR',NULL,'Paul','Thomas Anderson','M','US'),(42,'ROLE_DIRECTOR',NULL,'Hayao','Miyazaki','M','US'),(43,'ROLE_DIRECTOR',NULL,'Frank','Darabont','M','US'),(44,'ROLE_DIRECTOR',NULL,'Sam','Mendes','M','US'),(45,'ROLE_DIRECTOR',NULL,'James','Cameron','M','US'),(46,'ROLE_DIRECTOR',NULL,'Gus','Van Sant','M','US'),(47,'ROLE_DIRECTOR',NULL,'John','Boorman','M','US'),(48,'ROLE_DIRECTOR',NULL,'Danny','Boyle','M','US'),(49,'ROLE_DIRECTOR',NULL,'Christopher','Nolan','M','US'),(50,'ROLE_DIRECTOR',NULL,'Richard','Kelly','M','US'),(51,'ROLE_DIRECTOR',NULL,'Kevin','Spacey','M','US'),(52,'ROLE_DIRECTOR',NULL,'Andrei','Tarkovsky','M','US'),(53,'ROLE_DIRECTOR',NULL,'Peter','Jackson','M','US');
 /*!40000 ALTER TABLE `people` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -290,4 +284,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-11-23  1:58:42
+-- Dump completed on 2020-11-23  9:33:42

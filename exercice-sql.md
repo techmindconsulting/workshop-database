@@ -1,13 +1,13 @@
 ## Workshop
 ### SQL
 
-1 - Écrivez une requête en SQL pour lister toutes les informations des acteurs qui ont joué un rôle dans le film «Annie Hall».
+1 - Écrivez une requête qui retourne toutes les informations des acteurs qui ont joué un rôle dans le film «Annie Hall».
 
-2 - Écrivez une requête en SQL pour trouver le nom du réalisateur (prénom et nom) qui a réalisé un film qui a joué un rôle pour «Eyes Wide Shut». (en utilisant une sous-requête)
+2 - Écrivez une requête qui retourne le nom et prénom du réalisateur qui a réalisé un film dont il a joué un rôle.
 
-3 - Écrivez une requête en SQL pour répertorier tous les films qui ne sont pas américain.
+3 - Écrivez une requête qui retourne tous les films qui ne sont pas américain.
 
-4 - Écrivez une requête en SQL pour trouver le titre du film, l'année, la date de sortie, le réalisateur et l'acteur des films dont le critique est inconnu.
+4 - Écrivez une requête qui retourne le titre, l'année, la date de sortie du film, le réalisateur et l'acteur des films dont le critique est inconnu.
 
 5 - Écrivez une requête en SQL pour trouver le titre du film, l'année, la date de sortie, le réalisateur et l'acteur des films dont le critique est connu.
 

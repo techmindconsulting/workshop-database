@@ -121,4 +121,3 @@ triez l'ensemble des résultats en fonction de la date de sortie de la date la p
 
 31 - Ecrire une requete qui retourne le mois ou on a vu le plus de film toute années confondu.
 
-[README.md](README.md)

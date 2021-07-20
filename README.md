@@ -1,6 +1,7 @@
 # Videoflix
 
-### Enoncé
+##  Modelisation et conception de base de données
+
 Videoflix est une plateforme de streaming vidéo qui permet de consulter des films à raison de 600 minutes par mois et par utilisateur.
 La plateforme est accessible uniquement à travers un e-mail et propose des films en tous genres en version originale.
 
@@ -18,7 +19,26 @@ Une fiche technique du film est disponible, elle possède :
 
 Pour finir l'utilisateur pourra attribuer une note au film ainsi qu'un commentaire s'il le souhaite.
 
-### Travail à faire :
 
-* Concevoir le dictionnaire des données simplifié.
-* Concevoir le Modèle Conceptuel des Données.
+### Schema MCD (Modèle conceptuel des données)
+![https://github.com/sfinx13/videoflix-database/blob/main/schema-entity-relationship-model.png](https://github.com/sfinx13/videoflix-database/blob/main/schema-entity-relationship-model.png)
+
+### Schema base de données 
+![schema-entity-relationship-model.png](https://github.com/sfinx13/videoflix-database/blob/main/schema-database.png)
+
+#### Remarque: 
+Nous nous appuierons sur des données normalisées pour le pays et la langue 
+[ISO-3166 Country Codes and ISO-639 Language Codes](https://docs.oracle.com/cd/E13214_01/wli/docs92/xref/xqisocodes.html)
+
+
+## Requêtes SQL
+Ci joint l'ensemble des requêtes à executer
+
+### Requête niveau basique
+
+[SQLBASIC.md](SQLBASIC.md)
+
+### Requête niveau normal
+
+[SQLNORMAL.md](SQLNORMAL.md)
+
